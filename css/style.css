@@ -1,0 +1,105 @@
+/************
+NAVBAR
+
+*********/
+
+.navbar{
+
+    background: #4633af !important;
+    transition: all 0.2s;
+}
+
+
+/***************
+
+Seccion Hero
+
+****************/
+
+.section-hero{
+    padding: 200px 0px;
+    background: url(../images/section-hero/hero-background.jpg)  center center no-repeat ;
+    background-size: cover;
+}
+
+/**********
+
+Seccion opiniones
+
+***********/
+#carouselOpinions > .carousel-inner{
+    padding: 0px 80px;
+
+
+}
+.section-opinions{
+    padding: 100px 0px;
+    background: #262431;
+}
+
+/*********
+
+Seccion features
+***********/
+
+.section-features{
+    padding: 160px 0px;
+    background: #2f2c3d;
+}
+.heading-section{
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.card-icon > i {
+    font-size: 55px;
+}
+/* SETTING NAV*/
+.box-image{
+    padding-top: 20px;
+}
+
+.nav-tabs{
+    justify-content: center;
+    border:none;
+}
+
+.nav-tabs > .nav-link{
+    margin: 10px 0px  20px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 3px solid #f1f1f8;
+    color: #f1f1f8;
+    text-decoration: none;
+    font-size: 20px;
+    transition:all 0.2s ease;
+}
+
+
+.nav-tabs > .nav-link.active,
+.nav-tabs > .nav-link:hover{
+    border-bottom: 0.1875rem solid #00c9db ;
+    background-color: transparent;
+    color: #00c9db;
+}
+
+
+
+
+
+
+
+/*********
+
+Media Queris
+
+*******/
+
+@media (min-width: 992px){
+
+    /*Navbar*/
+    .navbar{
+        background-color: transparent !important;
+    }
+
+}
