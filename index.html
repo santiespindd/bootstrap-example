@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/fontawesome-all.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>bootstrap Example</title>
+    <title>Bootstrap Example</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<body data-spy="scroll" data-target="#main-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-navbar">
         <div class="container">
             <a href="#""  class=" navbar-brand text-info font-weight-bold "> Logo</a>
             <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal"
@@ -281,7 +281,7 @@
                                 <img src="/images/section-nav/workout.png" alt="" class="img-fluid">
                             </div>
                         </div>
-                         <div class="col-lg-4">
+                        <div class="col-lg-4">
                             <div class="card md-3 bg-transparent border-0">
                                 <div class="row no-gutters">
                                     <div class="col-sm-4">
@@ -301,14 +301,13 @@
                                             </p>
                                         </div>
                                     </div>
-                                  
+
                                 </div>
                             </div>
                             <div class="card md-3 bg-transparent border-0">
                                 <div class="row no-gutters">
                                     <div class="col-sm-4">
-                                        <div
-                                            class="box-icon d-flex justify-content-center align-items-center ">
+                                        <div class="box-icon d-flex justify-content-center align-items-center ">
                                             <div class="card-icon rounded-circle text-center border border-info">
                                                 <i class="fas fa-angle-double-right p-3 text-info"></i>
                                             </div>
@@ -323,14 +322,13 @@
                                             </p>
                                         </div>
                                     </div>
-                                 
+
                                 </div>
                             </div>
                             <div class="card md-3 bg-transparent border-0">
                                 <div class="row no-gutters">
                                     <div class="col-sm-4">
-                                        <div
-                                            class="box-icon  d-flex justify-content-center align-items-center ">
+                                        <div class="box-icon  d-flex justify-content-center align-items-center ">
                                             <div class="card-icon rounded-circle text-center border border-info">
                                                 <i class="fas fa-angle-double-right p-3 text-info"></i>
                                             </div>
@@ -345,7 +343,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -402,8 +400,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div
-                                            class="box-icon  d-flex justify-content-center align-items-center ">
+                                        <div class="box-icon  d-flex justify-content-center align-items-center ">
                                             <div class="card-icon rounded-circle text-center border border-info">
                                                 <i class="fas fa-angle-double-left p-3 text-info"></i>
                                             </div>
@@ -418,8 +415,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div
-                                            class="box-icon  d-flex justify-content-center align-items-center ">
+                                        <div class="box-icon  d-flex justify-content-center align-items-center ">
                                             <div class="card-icon rounded-circle text-center border border-info">
                                                 <i class="fas fa-angle-double-right p-3 text-info"></i>
                                             </div>
@@ -479,8 +475,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div
-                                            class="box-icon  d-flex justify-content-center align-items-center ">
+                                        <div class="box-icon  d-flex justify-content-center align-items-center ">
                                             <div class="card-icon rounded-circle text-center border border-info">
                                                 <i class="fas fa-angle-double-left p-3 text-info"></i>
                                             </div>
@@ -495,8 +490,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div
-                                            class="box-icon  d-flex justify-content-center align-items-center ">
+                                        <div class="box-icon  d-flex justify-content-center align-items-center ">
                                             <div class="card-icon rounded-circle text-center border border-info">
                                                 <i class="fas fa-angle-double-right p-3 text-info"></i>
                                             </div>
@@ -527,9 +521,232 @@
 
         </div>
     </section>
+
+    <section class="section-preview" id="preview">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center text-white">
+                        <h2 class="heading-section">Preview</h2>
+                        <p class="lead">Watch the video for more interesting options</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="box-image video text-center">
+                        <a href="" class="d-none d-md-block" data-toggle="modal" data-target="#previewModal">
+
+                            <div class="image-boton-preview-box">
+                                <img src="images/section-preview/section-preview-button.jpg" alt="" class="img-fluid">
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=Gnxgy92bMfU" class="d-md-none" target="_blank">
+                            <div class="image-boton-preview-box">
+                                <img src="images/section-preview/section-preview-button.jpg" alt="" class="img-fluid">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal fade" id="previewModal" tabindex="-1" role="dialog"
+                    aria-labelledby="previewModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <div class="iframe-youtube-box d-flex">
+                                    <iframe src="https://www.youtube.com/embed/Gnxgy92bMfU" frameborder="0" width="100%"
+                                        height="400px"
+                                        allow="acelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-details" id="details">
+        <div class="box-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="/images/section-details/section-details-1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="card bg-transparent text-white border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Card Title</h3>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content. This content is a little longer
+                                </p>
+                                <a href="" class="btn btn-info">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="card bg-transparent text-white border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Card Title</h3>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content. This content is a little longer
+                                </p>
+                                <a href="" class="btn btn-info">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/images/section-details/section-details-2.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact-form" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="heading-section">Contact</h2>
+                <p class="lead">If you have any question, feel free to contact us.</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="box-contact-info w-100 h-100 d-flex justify-content-center align-items-center">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fas fa-map-marker-alt text-info"></i>
+                                <span>Palo Alto, California US</span>
+
+                            </li>
+                            <li>
+                                <i class="fas fa-phone text-info"></i>
+                                <span>+1-654-687-9789</span>
+
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope text-info"></i>
+                                <span><a href="mailto:santiagonespindola@gmail.com"
+                                        class="text-white">info@example.com</a></span>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control contact-form-field" id="name-field"
+                                    placeholder="Name" required>
+                                <small id="nameHelp" class="form-text text-muted">We'll like to know you</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="mail" class="form-control contact-form-field" id="email-field"
+                                    placeholder="Enter email" required>
+                                <small id="commentHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="comment-field" rows="3" class="form-control contact-form-field"
+                                    required></textarea>
+                                <small id="commentHelp" class="form-text text-muted">We'll waiting for your
+                                    comment.</small>
+                            </div>
+                            <button class="btn btn-outline-info btn-lg btn-block" type="submit">Submit Form</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box-footer">
+                        <h4 class="text-white">Social Media</h4>
+                        <div class="box-icons d-flex justify-content-around p-4">
+                            <div class="icon-footer border border-info text-center rounded-circle">
+                                <a href="" class=""><i class="fab fa-twitter text-info p-3"></i></a>
+                            </div>
+                            <div class="icon-footer border border-info text-center rounded-circle">
+                                <a href="" class=""><i class="fab fa-facebook text-info p-3"></i></a>
+                            </div>
+                            <div class="icon-footer border border-info text-center rounded-circle">
+                                <a href="" class=""><i class="fab fa-linkedin text-info p-3"></i></a>
+                            </div>
+                            <div class="icon-footer border border-info text-center rounded-circle">
+                                <a href="" class=""><i class="fab fa-instagram text-info p-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box-footer text-white">
+                        <h4>Map</h4>
+                        <div class="box-map p-4">
+                            <iframe id="map-footer"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.8205733019186!2d-122.18011288983634!3d37.441343250998365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb07b9dba1c39%3A0xe1ff55235f576cf!2sPalo%20Alto%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1614095151726!5m2!1ses!2sar"
+                            width="290" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box-footer text-white">
+                        <h4>About us</h4>
+                        <div class="box-about-us p-4">
+                            <p class="text-muted">
+                                We love what we do, and we do our best.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="section-copyright">
+        <p class="text-muted text-center p-1 m-0">Copyright &copy; Santiago Espindola 2021</p>
+    </section>
     <script src="js/lib/jquery-3.4.1.min.js"></script>
     <script src="js/lib/popper.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+               var scroll = $(window).scrollTop();
+
+               if(scroll < 200){
+                   $('.fixed-top').removeClass('background-scroll-down');
+               }
+               else{
+                  $('.fixed-top').addClass('background-scroll-down');
+               }
+            })
+        })
+
+      /* document.addEventListener("DOMContentLoaded", function() {
+            window.scroll = function(){
+                var scroll = window.scrollTop();
+                if(scroll <200){
+                    document.querySelector('.fixed-top').classList.remove('background-scroll-down');
+                }
+                else{
+                    document.querySelector('.fixed-top').classList.add('background-scroll-down');
+               }
+            }
+        });*/
+
+</script>
 </body>
 
 </html>

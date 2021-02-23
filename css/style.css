@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;  /*Cuando hago click en el navbar se dirige mas fluido a la seccion*/
+}
+
+
 /************
 NAVBAR
 
@@ -12,11 +17,11 @@ NAVBAR
 
 /***************
 
-Seccion Hero
+Hero section
 
 ****************/
 
-.section-hero{
+.section-hero , .section-preview{
     padding: 200px 0px;
     background: url(../images/section-hero/hero-background.jpg)  center center no-repeat ;
     background-size: cover;
@@ -24,7 +29,7 @@ Seccion Hero
 
 /**********
 
-Seccion opiniones
+Opinions Section
 
 ***********/
 #carouselOpinions > .carousel-inner{
@@ -39,7 +44,7 @@ Seccion opiniones
 
 /*********
 
-Seccion features
+Features section
 ***********/
 
 .section-features{
@@ -84,14 +89,113 @@ Seccion features
 }
 
 
+/*********
+Section preview
+*********/
+
+.image-boton-preview-box::before ,.image-boton-preview-box::after {
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #17a2b8;
+    transform: translateX(-50%) translateY(-50%);
+   
+
+}
+.image-boton-preview-box::before{
+
+    animation: border-pulse 1500ms ease-out infinite;
+
+}
+
+.modal-dialog-centered{
+    max-width: 700px;
+}
+
+@keyframes border-pulse{
+    0%{
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
 
 
+/*********
+Section details
+*********/
 
+.section-details{
+    background-color: #262431;
+    padding: 100px 0%;
+}
+.box-details{
+    padding: 30px 0px;
+}
+
+/**********
+Contact section
+*********/
+.section-contact-form{
+    background-color: #2f2c3d;
+    color: white;
+    padding: 100px 0px;
+}
+.box-contact-info{
+    padding: 40px 0px;
+}
+.contact-form-field{
+    background-color: #413d52;
+    color: white;
+}
+.contact-form-field:focus{
+    border: 1px solid #17a2b8;
+    outline: none;
+    background-color: #413d52;
+    color: white;
+    box-shadow: none;
+}
+
+
+/*******
+
+Footer
+
+*******/
+
+footer{
+    background-color: #262431;
+}
+.icon-footer{
+    transition: all 0.5s ease;
+}
+.icon-footer:hover{
+    background-color: #ffffff2e;
+}
+
+#map-footer{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.section-copyright{
+    background-color:#2f2c3d ;
+}
 
 
 /*********
 
-Media Queris
+Media Querys
 
 *******/
 
@@ -101,5 +205,10 @@ Media Queris
     .navbar{
         background-color: transparent !important;
     }
+
+    
+.background-scroll-down{
+        background-color: #4633af !important; 
+}
 
 }
